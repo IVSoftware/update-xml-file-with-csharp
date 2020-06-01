@@ -14,8 +14,8 @@ namespace update_xml_file_with_csharp
         {
             // Given the filename and contents you specified
             const string FILENAME = "testfile.xml";
-            // Load up an XElement from the file 
-            XElement xel = XElement.Load(FILENAME);
+            // Load up an XDocument from the file 
+            XDocument xel = XDocument.Load(FILENAME);
             // You: "What I want is set the value of ApplicationUri from 456 to 789"
             var xMatchesStatedCondition =
                 xel
@@ -34,7 +34,7 @@ namespace update_xml_file_with_csharp
                 // Set the new value to the one you specified.
                 match.Value = "789";
             }
-            // Now convert the XElement back to string
+            // Now convert the XDocument back to string
             // and overwrite the original file.
             File.WriteAllText(FILENAME, xel.ToString());
 
