@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationConfiguration
+ xmlns="http://test.org/SDK/Configuration.xsd"
+  >
+  <ApplicationName>
+    <ApplicationUri>123</ApplicationUri>
+    <ApplicationUri>456</ApplicationUri>
+  </ApplicationName>
+</ApplicationConfiguration>
